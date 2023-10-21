@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+.nabe-content {
+    display: none; /* Agar elemen ini awalnya tersembunyi */
+}
+li a[data-content="Konten untuk na-be"]:hover + .nabe-content {
+    display: block;
+    
+   
+}
+li a::after {
+    font-size: 16px; /* Mengatur ukuran teks */
+    padding: 20px; /* Menambahkan jarak antara teks dan batas kotak */
+    border: 2px solid #000; /* Menambahkan border atau garis tepi kotak (sesuaikan warna dan lebar sesuai keinginan Anda) */
+    background-color: #dfc7c7; /* Mengatur warna latar belakang kotak (sesuaikan dengan preferensi Anda) */
+    width: 200px; /* Mengatur lebar kotak (sesuaikan dengan preferensi Anda) */
+    height: 300px; 
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    position: relative;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff; /* Warna teks diubah menjadi putih */
+}
+/* Mengatur elemen-elemen sebagai blok */
+.content {
+    display: block;
+}
+
+/* Mengatur jarak antara elemen-elemen */
+.content {
+    margin-bottom: 20px;
+}
+
+/* Mengatur lebar maksimum elemen-elemen */
+.content {
+    max-width: 100%;
+}
+
+
+
+.nav-links li a::after {
+    content: attr(data-content);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.nav-links li a:hover::after {
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #adebe9; /* Ganti dengan warna yang Anda inginkan */
+}
+
+.search-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.content-text {
+    text-align: center;
+}
+
+.content-text h1, .content-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-text p {
+    font-size: 16px;
+}
+/* Gaya untuk kotak pertama */
+.section.box:nth-child(1) {
+    width: 250px; /* Lebar kotak lebih besar */
+    height: 250px; /* Tinggi kotak lebih besar */
+    background-color: #f3f3f3; /* Latar belakang abu-abu */
+    border-radius: 50%; /* Membuat kotak berbentuk lingkaran */
+    display: flex;
+    justify-content: center; /* Tengahkan teks secara horizontal */
+    align-items: center; /* Tengahkan teks secara vertikal */
+}
+
+/* Gaya untuk kotak kedua */
+.section.box:nth-child(2) {
+    width: 200px; /* Lebar kotak lebih kecil */
+    height: 200px; /* Tinggi kotak lebih kecil */
+    background-color: #c5e1a5; /* Latar belakang hijau muda pastel */
+    border-radius: 50%; /* Membuat kotak berbentuk lingkaran */
+    display: flex;
+    justify-content: center; /* Tengahkan teks secara horizontal */
+    align-items: center; /* Tengahkan teks secara vertikal */
+}
+
+/* Gaya untuk kotak ketiga */
+.section.box:nth-child(3) {
+    width: 300px; /* Lebar kotak lebih besar dari kotak pertama */
+    height: 300px; /* Tinggi kotak lebih besar dari kotak pertama */
+    background: linear-gradient(to bottom, #ffffff, #f3f3f3); /* Latar belakang gradasi putih dan abu-abu */
+    border: 2px solid #999; /* Garis tepi abu-abu */
+    border-radius: 10px; /* Membuat sudut kotak lebih tumpul */
+    display: flex;
+    justify-content: center; /* Tengahkan teks secara horizontal */
+    align-items: center; /* Tengahkan teks secara vertikal */
+    text-align: center; /* Tengahkan teks di dalam kotak */
+    color: #000; /* Warna teks hitam */
+}
+.section.box:nth-child(4) {
+    width: 200px; /* Lebar kotak lebih kecil */
+    height: 200px; /* Tinggi kotak lebih kecil */
+    background-color: #aba5e1; /* Latar belakang hijau muda pastel */
+    border-radius: 50%; /* Membuat kotak berbentuk lingkaran */
+    display: flex;
+    justify-content: center; /* Tengahkan teks secara horizontal */
+    align-items: center; /* Tengahkan teks secara vertikal */
+}
+.section.box:nth-child(5) {
+    width: 200px; /* Lebar kotak lebih kecil */
+    height: 200px; /* Tinggi kotak lebih kecil */
+    background-color: #a5e1ab; /* Latar belakang hijau muda pastel */
+    border-radius: 50%; /* Membuat kotak berbentuk lingkaran */
+    display: flex;
+    justify-content: center; /* Tengahkan teks secara horizontal */
+    align-items: center; /* Tengahkan teks secara vertikal */
+}
